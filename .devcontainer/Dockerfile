@@ -7,9 +7,6 @@ zsh \
 starship \
 openssh \
 pipx \
-# && pipx install poetry \
-# && pipx ensurepath \
-# && poetry config virtualenvs.create false \
 && adduser -D -s /bin/zsh -u 1000 ds-user 
 
 USER ds-user
@@ -22,8 +19,6 @@ COPY .zshrc /home/ds-user
 RUN pipx install poetry \
 && pipx ensurepath \
 && poetry config virtualenvs.create false
-
-# SHELL ["/bin/zsh", "-c"]
 
 WORKDIR /workspace
 COPY ../ .
