@@ -13,7 +13,6 @@
                 "tamasfe.even-better-toml"
             ]
         }
-    }
-    // ,
-    // "postCreateCommand": "poetry install"
+    },
+    "postCreateCommand": ["poetry", "install"]
 }

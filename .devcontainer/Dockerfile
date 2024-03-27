@@ -16,9 +16,9 @@ ENV ZSH_THEME starship
 
 COPY .zshrc /home/ds-user
 
-RUN pipx install poetry \
-&& pipx ensurepath \
-&& poetry config virtualenvs.create false
+RUN pipx install poetry --python $(which python) \
+&& poetry config virtualenvs.create false \
+&& poetry config virtualenvs.prefer-active-python true
 
 WORKDIR /workspace
 COPY ../ .
