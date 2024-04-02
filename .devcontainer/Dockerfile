@@ -8,6 +8,10 @@ starship \
 openssh \
 pipx \
 make \
+gcc \
+python3-dev \
+musl-dev \
+linux-headers \
 && adduser -D -s /bin/zsh -u 1000 ds-user 
 
 USER ds-user

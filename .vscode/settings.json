@@ -1,6 +1,11 @@
 {
+    "notebook.formatOnSave.enabled": true,
+    "notebook.codeActionsOnSave": {
+        "notebook.source.fixAll": "explicit",
+        "notebook.source.organizeImports": "explicit"
+    },
     "[python]": {
-        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.defaultFormatter": "charliermarsh.ruff", 
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
             "source.fixAll.ruff": "explicit",
@@ -13,5 +18,7 @@
     "evenBetterToml.formatter.columnWidth": 80,
 
     "ruff.lint.args": ["--config=ruff.toml"],
-    "ruff.format.args": ["--config=ruff.toml"]
+    "ruff.format.args": [
+        "--config=ruff.toml"
+    ]
 }

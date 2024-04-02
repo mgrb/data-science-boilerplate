@@ -10,7 +10,8 @@
                 "ms-python.python",
                 "oderwat.indent-rainbow",
                 "charliermarsh.ruff",
-                "tamasfe.even-better-toml"
+                "tamasfe.even-better-toml",
+                "ms-toolsai.jupyter"
             ]
         }
     },
