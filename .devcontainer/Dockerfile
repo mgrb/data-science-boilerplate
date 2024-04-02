@@ -7,6 +7,7 @@ zsh \
 starship \
 openssh \
 pipx \
+make \
 && adduser -D -s /bin/zsh -u 1000 ds-user 
 
 USER ds-user
