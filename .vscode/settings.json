@@ -1,0 +1,17 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": "explicit",
+            "source.organizeImports.ruff": "explicit"
+        },
+        "editor.wordWrap": "bounded"
+    },
+    "python.defaultInterpreterPath": ".venv/bin/python",
+    "evenBetterToml.formatter.allowedBlankLines": 2,
+    "evenBetterToml.formatter.columnWidth": 80,
+
+    "ruff.lint.args": ["--config=ruff.toml"],
+    "ruff.format.args": ["--config=ruff.toml"]
+}
