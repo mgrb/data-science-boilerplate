@@ -15,5 +15,5 @@
             ]
         }
     },
-    "postCreateCommand": "poetry shell"
+    "postCreateCommand": "make"
 }

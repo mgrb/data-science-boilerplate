@@ -1,9 +1,18 @@
 {
+    "python.defaultInterpreterPath": ".venv/bin/python",
+    "evenBetterToml.formatter.allowedBlankLines": 2,
+    "evenBetterToml.formatter.columnWidth": 80,
+
+    "ruff.format.args": ["--config=ruff.toml"],
+    "ruff.lint.args": ["--config=ruff.toml"],
+    "ruff.interpreter": ["python"],
+    
     "notebook.formatOnSave.enabled": true,
     "notebook.codeActionsOnSave": {
         "notebook.source.fixAll": "explicit",
         "notebook.source.organizeImports": "explicit"
     },
+
     "[python]": {
         "editor.defaultFormatter": "charliermarsh.ruff", 
         "editor.formatOnSave": true,
@@ -13,12 +22,4 @@
         },
         "editor.wordWrap": "bounded"
     },
-    "python.defaultInterpreterPath": ".venv/bin/python",
-    "evenBetterToml.formatter.allowedBlankLines": 2,
-    "evenBetterToml.formatter.columnWidth": 80,
-
-    "ruff.lint.args": ["--config=ruff.toml"],
-    "ruff.format.args": [
-        "--config=ruff.toml"
-    ]
 }
