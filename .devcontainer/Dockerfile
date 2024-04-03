@@ -7,6 +7,17 @@ zsh \
 starship \
 openssh \
 pipx \
+make \
+gcc \
+python3-dev \
+musl-dev \
+linux-headers \
+cairo-dev \
+freetype-dev \
+libffi-dev \
+jpeg-dev \
+libpng-dev \
+zlib-dev \
 && adduser -D -s /bin/zsh -u 1000 ds-user 
 
 USER ds-user
@@ -16,11 +27,16 @@ ENV ZSH_THEME starship
 
 COPY .zshrc /home/ds-user
 
-RUN pipx install poetry \
-&& pipx ensurepath \
-&& poetry config virtualenvs.create false
+SHELL ["/bin/zsh", "-c"]
+
+RUN pipx install poetry --python $(which python) \
+&& poetry config virtualenvs.create true \
+&& poetry config virtualenvs.prefer-active-python true \
+&& poetry config virtualenvs.in-project true
+
 
 WORKDIR /workspace
 COPY ../ .
+
 
 CMD ["tail", "-f", "/dev/null"]
