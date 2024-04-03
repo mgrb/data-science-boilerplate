@@ -12,6 +12,12 @@ gcc \
 python3-dev \
 musl-dev \
 linux-headers \
+cairo-dev \
+freetype-dev \
+libffi-dev \
+jpeg-dev \
+libpng-dev \
+zlib-dev \
 && adduser -D -s /bin/zsh -u 1000 ds-user 
 
 USER ds-user

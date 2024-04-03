@@ -15,6 +15,8 @@ python = "^3.12"
 mkdocs = "^1.5.3"
 ruff = "^0.3.5"
 ipykernel = "^6.29.4"
+mkdocs-material = {extras = ["imaging"], version = "^9.5.17"}
+pymdown-extensions = "^10.7.1"
 
 [build-system]
 requires = ["poetry-core"]
