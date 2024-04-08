@@ -1,8 +1,8 @@
 SHEll := /bin/zsh
-.PHONY: setup
+.PHONY: venv
 
-setup:
-	@poetry shell
-	@poetry install
+venv:
+	poetry run poetry install
+
 showdocs:
 	@mkdocs serve
