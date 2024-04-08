@@ -1,5 +1,5 @@
 # where to look for source files
-src = ["src", "notebooks"]  
+src = ["src", "notebooks"]
 
 # Exclude a variety of commonly ignored directories.
 exclude = [
@@ -43,7 +43,8 @@ extend-include = ["*.ipynb"]
 # Unlike Flake8, Ruff doesn't enable pycodestyle warnings (`W`) or
 # McCabe complexity (`C901`) by default.
 select = ['ALL']
-ignore = ['INP001', 'ANN101', 'T201', 'Q000']
+ignore = ['INP001', 'ANN101', 'T201', 'Q000', 'TD003', 'D401']
+
 
 # Allow fix for all enabled rules (when `--fix`) is provided.
 fixable = ["ALL"]
